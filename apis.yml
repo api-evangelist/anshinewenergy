@@ -1,23 +1,51 @@
 aid: anshinewenergy
+
 name: Anshinewenergy
-description: 'Anshinewenergy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: "Anshinewenergy is a stub company identified in the API Evangelist secondary-market harvest. It currently lacks publicly available documentation, website, or API endpoints. The profile will be enriched as information becomes available, including a detailed description, tags, and link properties once the company's official online presence is verified."
+
 url: https://raw.githubusercontent.com/api-evangelist/anshinewenergy/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- Energy
+- Renewable
+- Solar
+- CleanTech
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/anshinewenergy-hosts.yml
+- type: Vendors
+  url: vendors/anshinewenergy-vendors.yml
+- type: DomainSecurity
+  url: security/anshinewenergy-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/anshinewenergy
+
+apis: []
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
